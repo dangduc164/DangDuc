@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>bai1</title>
+</head>
+<body>
+
+	<script type="text/javascript">
+		var a=12,b=24;
+		float tong, hieu,thuong,tich,du;
+		console.log("abc");
+	</script>
+
+</body>
+</html>
