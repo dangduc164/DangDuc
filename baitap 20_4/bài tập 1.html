@@ -6,20 +6,30 @@
 <script type="text/javascript">
 	function tính () {
 		// body... 
-		var a = document.getElementById("cdai");
-		var b = document.getElementById("crong");
+		var a = document.getElementById("cdai").value;
+		var b = document.getElementById("crong").value;
 		var cvi = (Number(cdai.value)+Number(crong.value))*2;
 		var dt = Number(cdai.value)*Number(crong.value);
 		var kq = document.getElementById("ketqua");
 		kq.value=cvi;
 		var kq1 = document.getElementById("ketqua1");
 		kq1.value=dt;
+		if (a == '' || b == '') 
+			{
+				alert("bạn không được để trống!");
+				exit();
+			} 
+		else if(isNaN(a)||isNaN(b))
+			{
+				alert("chỉ được nhập số!")
+				exit();
+			}
 	}
 </script>
 <body>
 	<table border="1px" align="center">
 		<tr>
-			<td align="center">Chu vi hình chữ nhật</td>
+			<td align="center" bgcolor="yellow" style="color: "><h2>Chu vi hình chữ nhật</h2></td>
 		</tr>
 		<tr>
 			<td>Nhập  vào chiều dài(đơn vị met):<br>
