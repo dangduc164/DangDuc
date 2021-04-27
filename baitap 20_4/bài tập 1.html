@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>bài 1</title>
+</head>
+<script type="text/javascript">
+	function tính () {
+		// body... 
+		var a = document.getElementById("cdai");
+		var b = document.getElementById("crong");
+		var cvi = (Number(cdai.value)+Number(crong.value))*2;
+		var dt = Number(cdai.value)*Number(crong.value);
+		var kq = document.getElementById("ketqua");
+		kq.value=cvi;
+		var kq1 = document.getElementById("ketqua1");
+		kq1.value=dt;
+	}
+</script>
+<body>
+	<table border="1px" align="center">
+		<tr>
+			<td align="center">Chu vi hình chữ nhật</td>
+		</tr>
+		<tr>
+			<td>Nhập  vào chiều dài(đơn vị met):<br>
+				<input type="text" id="cdai"><br><br>
+				Nhập  vào chiều rộng(đơn vị met):<br>
+				<input type="text" id="crong"><br><br>
+				<input type="button" name="" value="tính chu vi" onclick="tính()">
+				<br><br>
+					Chu vi hình chữ nhật là:<br>
+					<input type="" id="ketqua"><br>
+					Diện tích hình chữ nhật là (m<sup>2</sup>):<br>
+					<input type="" id="ketqua1">
+
+				
+			</td>
+
+		</tr>
+		
+	</table>
+
+</body>
+</html>
