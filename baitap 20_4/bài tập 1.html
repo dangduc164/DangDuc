@@ -10,10 +10,6 @@
 		var b = document.getElementById("crong").value;
 		var cvi = (Number(cdai.value)+Number(crong.value))*2;
 		var dt = Number(cdai.value)*Number(crong.value);
-		var kq = document.getElementById("ketqua");
-		kq.value=cvi;
-		var kq1 = document.getElementById("ketqua1");
-		kq1.value=dt;
 		if (a == '' || b == '') 
 			{
 				alert("bạn không được để trống!");
@@ -24,6 +20,8 @@
 				alert("chỉ được nhập số!")
 				exit();
 			}
+			document.getElementById('ketqua').innerText = "chu vi = " + cvi + "m ";
+			document.getElementById('ketqua1').innerText = "diện tích = " + dt;
 	}
 </script>
 <body>
@@ -32,16 +30,15 @@
 			<td align="center" bgcolor="yellow" style="color: "><h2>Chu vi hình chữ nhật</h2></td>
 		</tr>
 		<tr>
+			<div id="Alert"></div>
 			<td>Nhập  vào chiều dài(đơn vị met):<br>
 				<input type="text" id="cdai"><br><br>
 				Nhập  vào chiều rộng(đơn vị met):<br>
 				<input type="text" id="crong"><br><br>
-				<input type="button" name="" value="tính chu vi" onclick="tính()">
+				<input style="background-color: #339900" type="button" name="" value="tính chu vi và diện tích hcn" onclick="tính()">
 				<br><br>
-					Chu vi hình chữ nhật là:<br>
-					<input type="" id="ketqua"><br>
-					Diện tích hình chữ nhật là (m<sup>2</sup>):<br>
-					<input type="" id="ketqua1">
+					<div style="color: #0099FF" id="ketqua"></div><br>
+					<div style="color: #0099FF" id="ketqua1"></div><br>
 
 				
 			</td>
